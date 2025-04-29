@@ -25,7 +25,6 @@ def log_clipboard():
 
 if __name__ == "__main__":
     captured_urls = log_clipboard()  # Capture the returned URLs
-    print(captured_urls)
     if captured_urls:  # Only proceed if URLs were captured
         cut_urls = [cut_url(url) for url in captured_urls]
         
